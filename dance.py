@@ -8,6 +8,7 @@ up 20 left and 40 up from where it started, so you should return [-20, 40].
 """
 
 from functools import reduce
+from typing import List, Tuple
 
 """Old
 def add_val(acc, d_val):
@@ -26,7 +27,8 @@ def mr_roboto(instructions):
     return reduce(add_val, instructions, [0, 0])
 """
 
-def map_dir_to_pair(direction, v_str):
+def map_dir_to_pair(d_val_str) -> Tuple[int, int]:
+    direction, v_str = d_val_str.split(' ')
     val = int(v_str)
     switch = {
         "up": (0, val),
@@ -36,11 +38,11 @@ def map_dir_to_pair(direction, v_str):
     }
     return switch[direction]
 
-def add_val(acc, d_val):
-    direction, str_val = d_val.split(' ')
-    parsed_val = map_dir_to_pair(direction, str_val)
-    return (acc[0] + parsed_val[0], acc[1] + parsed_val[1])
+def add_val(acc, d_val) -> Tuple[int, int]:
+    old_left, old_right = acc
+    cur_left, cur_right = map_dir_to_pair(d_val)
+    return (old_left + cur_left, old_right + cur_right)
 
-def mr_roboto(instructions):
+def mr_roboto(instructions) -> List[int]:
     return list(reduce(add_val, instructions, (0, 0)))
 

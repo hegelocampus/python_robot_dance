@@ -1,0 +1,108 @@
+2020-07-10 13:00:31,943 INFO Constructing shared directory `/home/bee/appaccademy/personal_projects/python_robot_dance/.pyre/shared_analysis_directory`
+2020-07-10 13:00:31,944 ERROR No targets or source directories to analyze.
+Did you mean to run the command within a Pyre project?
+(A Pyre project is a directory with a `.pyre_configuration.local` file.
+If it is in directory foo/, you can also run `pyre -l foo`.)
+See `pyre --help` for more details.
+
+2020-07-10 13:00:36,875 INFO Binary found at `/home/bee/.local/bin/pyre.bin`
+2020-07-10 13:00:36,875 DEBUG Trying with: `/home/bee/.local/lib/python3.8/site-packages/pyre_check/client/pyre_check/typeshed/`
+2020-07-10 13:00:36,875 DEBUG Trying with: `/home/bee/.local/lib/python3.8/site-packages/pyre_check/pyre_check/typeshed/`
+2020-07-10 13:00:36,875 DEBUG Trying with: `/home/bee/.local/lib/python3.8/site-packages/pyre_check/typeshed/`
+2020-07-10 13:00:36,875 DEBUG Trying with: `/home/bee/.local/lib/python3.8/pyre_check/typeshed/`
+2020-07-10 13:00:36,875 DEBUG Trying with: `/home/bee/.local/lib/pyre_check/typeshed/`
+2020-07-10 13:00:36,875 DEBUG Trying with: `/home/bee/.local/lib/python3.8/site-packages/pyre_check/client/pyre_check/taint/`
+2020-07-10 13:00:36,876 DEBUG Trying with: `/home/bee/.local/lib/python3.8/site-packages/pyre_check/pyre_check/taint/`
+2020-07-10 13:00:36,876 DEBUG Trying with: `/home/bee/.local/lib/python3.8/site-packages/pyre_check/taint/`
+2020-07-10 13:00:36,876 DEBUG Trying with: `/home/bee/.local/lib/python3.8/pyre_check/taint/`
+2020-07-10 13:00:36,876 DEBUG Trying with: `/home/bee/.local/lib/pyre_check/taint/`
+2020-07-10 13:00:36,876 PROMPT Which directory should pyre be initialized in? (Default: `.`): 
+2020-07-10 13:00:39,181 INFO Successfully initialized pyre! You can view the configuration at `/home/bee/appaccademy/personal_projects/python_robot_dance/.pyre_configuration`.
+2020-07-10 13:00:43,990 DEBUG Running `/home/bee/.local/bin/pyre.bin infer -show-error-traces -logging-sections parser -project-root /home/bee/appaccademy/personal_projects/python_robot_dance -log-directory /home/bee/appaccademy/personal_projects/python_robot_dance/.pyre -filter-directories /home/bee/appaccademy/personal_projects/python_robot_dance -search-path /home/bee/.local/lib/pyre_check/typeshed/stdlib/3.7,/home/bee/.local/lib/pyre_check/typeshed/stdlib/3.6,/home/bee/.local/lib/pyre_check/typeshed/stdlib/3,/home/bee/.local/lib/pyre_check/typeshed/stdlib/2and3,/home/bee/.local/lib/pyre_check/typeshed/third_party/3,/home/bee/.local/lib/pyre_check/typeshed/third_party/2and3 .`
+2020-07-10 13:00:44,013 DEBUG Registering process with pid 558550 in pid file `/home/bee/appaccademy/personal_projects/python_robot_dance/.pyre/pid_files/infer-558550.pid`
+2020-07-10 13:00:44,264 PERFORMANCE Module tracker built: 0.071311s
+2020-07-10 13:00:44,264 INFO Parsing 925 stubs and sources...
+2020-07-10 13:00:45,363 PERFORMANCE Sources parsed: 1.098849s
+2020-07-10 13:00:45,363 INFO Building type environment...
+2020-07-10 13:00:45,811 INFO Updating is from empty stub result Environment
+2020-07-10 13:00:45,811 INFO Updating Alias Environment
+2020-07-10 13:00:45,811 INFO Updating Edges Environment
+2020-07-10 13:00:45,812 INFO Updating Undecorated functions Environment
+2020-07-10 13:00:45,812 INFO Updating Class metadata Environment
+2020-07-10 13:00:45,812 INFO Updating parse annotation Environment
+2020-07-10 13:00:45,813 INFO Updating attributes Environment
+2020-07-10 13:00:45,813 INFO Updating Global Environment
+2020-07-10 13:00:45,813 INFO Updating Global Locations Environment
+2020-07-10 13:00:45,813 PERFORMANCE Full environment built: 0.447890s
+2020-07-10 13:00:45,814 INFO Running inference...
+2020-07-10 13:00:45,897 INFO Processed 1 of 1 sources
+2020-07-10 13:00:45,897 PERFORMANCE Inference: 0.084346s
+2020-07-10 13:00:45,901 DEBUG Removing pid file: `/home/bee/appaccademy/personal_projects/python_robot_dance/.pyre/pid_files/infer-558550.pid`
+2020-07-10 13:00:45,965 SUCCESS Outputting inferred stubs to /home/bee/appaccademy/personal_projects/python_robot_dance/.pyre/types
+
+2020-07-10 13:02:53,677 DEBUG Running `/home/bee/.local/bin/pyre.bin check -logging-sections parser -project-root /home/bee/appaccademy/personal_projects/python_robot_dance -log-directory /home/bee/appaccademy/personal_projects/python_robot_dance/.pyre -filter-directories /home/bee/appaccademy/personal_projects/python_robot_dance -workers 4 -ignore-all-errors /home/bee/appaccademy/personal_projects/python_robot_dance/.pyre -search-path /home/bee/.local/lib/pyre_check/typeshed/stdlib/3.7,/home/bee/.local/lib/pyre_check/typeshed/stdlib/3.6,/home/bee/.local/lib/pyre_check/typeshed/stdlib/3,/home/bee/.local/lib/pyre_check/typeshed/stdlib/2and3,/home/bee/.local/lib/pyre_check/typeshed/third_party/3,/home/bee/.local/lib/pyre_check/typeshed/third_party/2and3 .`
+2020-07-10 13:02:53,684 DEBUG Registering process with pid 559354 in pid file `/home/bee/appaccademy/personal_projects/python_robot_dance/.pyre/pid_files/check-559354.pid`
+2020-07-10 13:02:53,738 PERFORMANCE Module tracker built: 0.032534s
+2020-07-10 13:02:53,738 INFO Parsing 926 stubs and sources...
+2020-07-10 13:02:54,723 PERFORMANCE Sources parsed: 0.984573s
+2020-07-10 13:02:54,723 INFO Building type environment...
+2020-07-10 13:02:55,197 INFO Updating is from empty stub result Environment
+2020-07-10 13:02:55,197 INFO Updating Alias Environment
+2020-07-10 13:02:55,198 INFO Updating Edges Environment
+2020-07-10 13:02:55,198 INFO Updating Undecorated functions Environment
+2020-07-10 13:02:55,198 INFO Updating Class metadata Environment
+2020-07-10 13:02:55,199 INFO Updating parse annotation Environment
+2020-07-10 13:02:55,199 INFO Updating attributes Environment
+2020-07-10 13:02:55,199 INFO Updating Global Environment
+2020-07-10 13:02:55,199 INFO Updating Global Locations Environment
+2020-07-10 13:02:55,200 PERFORMANCE Full environment built: 0.474248s
+2020-07-10 13:02:55,309 INFO Checking 4 functions...
+2020-07-10 13:02:55,390 INFO Processed 4 of 4 functions
+2020-07-10 13:02:55,391 PERFORMANCE Check_TypeCheck: 0.081744s
+2020-07-10 13:02:55,391 MEMORY Shared memory size post-typecheck (size: 13)
+2020-07-10 13:02:55,391 INFO Postprocessing 926 sources...
+2020-07-10 13:02:55,429 INFO Postprocessed 116 of 926 sources
+2020-07-10 13:02:55,431 INFO Postprocessed 232 of 926 sources
+2020-07-10 13:02:55,450 INFO Postprocessed 348 of 926 sources
+2020-07-10 13:02:55,453 INFO Postprocessed 464 of 926 sources
+2020-07-10 13:02:55,470 INFO Postprocessed 580 of 926 sources
+2020-07-10 13:02:55,471 INFO Postprocessed 696 of 926 sources
+2020-07-10 13:02:55,491 INFO Postprocessed 812 of 926 sources
+2020-07-10 13:02:55,523 INFO Postprocessed 926 of 926 sources
+2020-07-10 13:02:55,524 PERFORMANCE Check: 1.821551s
+2020-07-10 13:02:55,535 DEBUG Removing pid file: `/home/bee/appaccademy/personal_projects/python_robot_dance/.pyre/pid_files/check-559354.pid`
+2020-07-10 13:02:55,598 SUCCESS No type errors found
+
+2020-07-10 13:02:58,701 DEBUG Running `/home/bee/.local/bin/pyre.bin check -logging-sections parser -project-root /home/bee/appaccademy/personal_projects/python_robot_dance -log-directory /home/bee/appaccademy/personal_projects/python_robot_dance/.pyre -filter-directories /home/bee/appaccademy/personal_projects/python_robot_dance -workers 4 -ignore-all-errors /home/bee/appaccademy/personal_projects/python_robot_dance/.pyre -search-path /home/bee/.local/lib/pyre_check/typeshed/stdlib/3.7,/home/bee/.local/lib/pyre_check/typeshed/stdlib/3.6,/home/bee/.local/lib/pyre_check/typeshed/stdlib/3,/home/bee/.local/lib/pyre_check/typeshed/stdlib/2and3,/home/bee/.local/lib/pyre_check/typeshed/third_party/3,/home/bee/.local/lib/pyre_check/typeshed/third_party/2and3 .`
+2020-07-10 13:02:58,705 DEBUG Registering process with pid 559454 in pid file `/home/bee/appaccademy/personal_projects/python_robot_dance/.pyre/pid_files/check-559454.pid`
+2020-07-10 13:02:58,758 PERFORMANCE Module tracker built: 0.030931s
+2020-07-10 13:02:58,759 INFO Parsing 926 stubs and sources...
+2020-07-10 13:02:59,729 PERFORMANCE Sources parsed: 0.969985s
+2020-07-10 13:02:59,729 INFO Building type environment...
+2020-07-10 13:03:00,200 INFO Updating is from empty stub result Environment
+2020-07-10 13:03:00,200 INFO Updating Alias Environment
+2020-07-10 13:03:00,200 INFO Updating Edges Environment
+2020-07-10 13:03:00,200 INFO Updating Undecorated functions Environment
+2020-07-10 13:03:00,200 INFO Updating Class metadata Environment
+2020-07-10 13:03:00,201 INFO Updating parse annotation Environment
+2020-07-10 13:03:00,201 INFO Updating attributes Environment
+2020-07-10 13:03:00,201 INFO Updating Global Environment
+2020-07-10 13:03:00,201 INFO Updating Global Locations Environment
+2020-07-10 13:03:00,201 PERFORMANCE Full environment built: 0.471490s
+2020-07-10 13:03:00,358 INFO Checking 4 functions...
+2020-07-10 13:03:00,417 INFO Processed 4 of 4 functions
+2020-07-10 13:03:00,417 PERFORMANCE Check_TypeCheck: 0.058739s
+2020-07-10 13:03:00,417 MEMORY Shared memory size post-typecheck (size: 13)
+2020-07-10 13:03:00,418 INFO Postprocessing 926 sources...
+2020-07-10 13:03:00,455 INFO Postprocessed 116 of 926 sources
+2020-07-10 13:03:00,457 INFO Postprocessed 232 of 926 sources
+2020-07-10 13:03:00,484 INFO Postprocessed 348 of 926 sources
+2020-07-10 13:03:00,486 INFO Postprocessed 464 of 926 sources
+2020-07-10 13:03:00,497 INFO Postprocessed 580 of 926 sources
+2020-07-10 13:03:00,513 INFO Postprocessed 696 of 926 sources
+2020-07-10 13:03:00,529 INFO Postprocessed 810 of 926 sources
+2020-07-10 13:03:00,558 INFO Postprocessed 926 of 926 sources
+2020-07-10 13:03:00,560 PERFORMANCE Check: 1.834637s
+2020-07-10 13:03:00,579 DEBUG Removing pid file: `/home/bee/appaccademy/personal_projects/python_robot_dance/.pyre/pid_files/check-559454.pid`
+2020-07-10 13:03:00,619 SUCCESS No type errors found
+
