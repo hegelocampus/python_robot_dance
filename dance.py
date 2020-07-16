@@ -29,21 +29,13 @@ def add_val(acc, d_val) -> Tuple[int, int]:
     return (acc_left + cur_left, acc_right + cur_right)
 
 def mr_roboto(instructions) -> List[int]:
-    return list(reduce(add_val, instructions, (0, 0)))
+    return reduce(add_val, instructions, (0, 0))
 
-## Old version
-def add_val_old(acc, d_val):
-    direction, v = d_val.split(' ')
-    val = int(v)
-    switch = {
-        "up": [0, val],
-        "down": [0, -val],
-        "right": [val, 0],
-        "left": [-val, 0]
-    }
-    add_val = switch[direction]
-    return [acc[0] + add_val[0], acc[1] + add_val[1]]
-
-def mr_roboto_old(instructions):
-    return reduce(add_val, instructions, [0, 0])
+def main():
+    test_1 = mr_roboto(["right 10", "up 50", "left 30", "down 10"])
+    print(f"test1: {test_1}")
+    test_2 = mr_roboto(["right 100", "right 100", "up 500", "up 10000"])
+    print(f"test2: {test_2}")
+    test_3 = mr_roboto([])
+    print(f"test3: {test_3}")
 
